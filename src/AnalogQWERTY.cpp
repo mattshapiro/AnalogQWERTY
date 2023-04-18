@@ -41,12 +41,12 @@ char AnalogQWERTY::getKeyPress() {
     for (int i = 0; i < num_pins; i++ ){
         int temp = analogRead(pins[i]);
         if(temp > 50) {
+            pressed = true;
             for (int j = 0; j < voltages_size; j++){
                 if ((voltages[j] - VARIANCE <= temp) && (voltages[j] + VARIANCE >= temp)){
                     int row = j / ROWS;
                     int col = j % COLS;
                     char ch = layouts[i][row][col];
-                    pressed = true;
                     if(ch != lastKey) {
                         // hacky debounce
                         lastKey = ch;

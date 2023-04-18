@@ -1,7 +1,7 @@
 #include "AnalogQWERTY.h"
 
 #define STM32
-//#define ATMEGA328
+//#define NANO
 
 #ifdef STM32
 #define NUM_KEYPADS 3
