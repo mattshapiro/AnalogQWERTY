@@ -10,6 +10,7 @@
 
 #define DELETE_KEY 0x7F
 #define RETURN_KEY 0x0D
+#define TEMINATOR_KEY 0x1A // for terminating SMS message bodies
 
 class AnalogQWERTY {
     public:

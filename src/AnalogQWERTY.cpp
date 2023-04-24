@@ -23,9 +23,9 @@ const char layouts[3][ROWS][COLS] =
    },
    {
     {'9', '0', '-', DELETE_KEY},
-    {'o', 'p', '+', '\\'},
-    {'l', ',', '\'', RETURN_KEY},    
-    {'b', 'n', 'm', '.'}    
+    {'o', 'p', '+', '?'},
+    {'l', ',', '\"', RETURN_KEY},    
+    {'b', 'n', 'm', ';'}    
    }
   };
 
